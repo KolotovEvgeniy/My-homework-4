@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case normal 4.2
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let a;
+    let b;
+
+    a = +prompt('Введите число a:', '2');
+
+    b = a;
+    a = a * a; // **2
+    a = a * a; // **4
+    a = a * b; // **5
+    a = a * b; // **6
+    a = a * a; // **12
+
+    console.log('a ** 12 =', a);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case hard 4.2
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let x;
+    let a;
+    let b;
+    let c;
+    let d;
+    let sumNumber;
+    let multiNumber;
+
+    x = +prompt('Введите четырехзначное число:', '1234');
+
+    a = Math.floor(x / 1000 % 10);
+    b = Math.floor(x / 100 % 10);
+    c = Math.floor(x / 10 % 10);
+    d = x % 10;
+
+    sumNumber = a + b + c + d;
+    multiNumber = a * b * c * d;
+
+    console.log('Первое число:', a);
+    console.log('Второе число:', b);
+    console.log('Третье число:', c);
+    console.log('Четвертое число:', d);
+    console.log('Сумма цифр, введенных пользователем:', sumNumber);
+    console.log('Произведение цифр, введенных пользователем:', multiNumber);
+  </script>
+</body>
+
+</html>

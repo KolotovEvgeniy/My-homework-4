@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case normal 4.1
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    // r = L/2PI;
+    // S = PI × r2;
+    // S = a × a;
+    let L;
+    let r;
+    let areaСircle;
+    let a;
+    const PI = 3.14;
+
+    L = +prompt('Введите длинну окружности:', '1');
+
+    r = L / 2 * PI;
+    areaСircle = PI * r ** 2;
+    a = Math.sqrt(areaСircle);
+
+    console.log('Радиус окружности r =', r);
+    console.log('Площадь круга S =', areaСircle);
+    console.log('Сторона квадрата a =', a);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case hard 4.1
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let lengthSquare;
+    let heightPrism;
+    let volumePrism;
+    let volumeСylinder;
+    let remoteVolume;
+    const PI = 3.14;
+
+    lengthSquare = +prompt('Введите длинну стороны квадрата, мм.:', '10');
+    heightPrism = +prompt('Введите высоту призмы, мм.:', '20');
+
+    volumePrism = lengthSquare ** 2 * heightPrism;
+    volumeСylinder = PI * (lengthSquare / 2) ** 2 * heightPrism;
+    remoteVolume = volumePrism - volumeСylinder;
+
+    console.log('Объем материала ушедший в расход, мм3:', remoteVolume);
+  </script>
+</body>
+
+</html>

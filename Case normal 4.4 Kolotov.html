@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case normal 4.4
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let w;
+    let h;
+    let widthDoor;
+    let heightDoor;
+    let widthWindow;
+    let heightWindow;
+    let sumWindow;
+    let areaWall;
+
+    w = +prompt('Введите ширину комнаты (в метрах),:', '4');
+    h = +prompt('Введите высоту потолка (в метрах),:', '3');
+    widthDoor = +prompt('Введите ширину двери (в метрах),:', '1.5');
+    heightDoor = +prompt('Введите высоту двери (в метрах),:', '2.5');
+    widthWindow = +prompt('Введите ширину окна (в метрах),:', '1.5');
+    heightWindow = +prompt('Введите высоту окна (в метрах),:', '1.5');
+    sumWindow = +prompt('Введите количество окон,:', '2');
+
+    areaWall = (w * h * 4) - (widthDoor * heightDoor) - (sumWindow * widthWindow * heightWindow);
+
+    console.log('Площадь стен для оклеивания обоями, м2:', areaWall);
+  </script>
+</body>
+
+</html>

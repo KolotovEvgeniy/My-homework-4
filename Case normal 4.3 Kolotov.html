@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Case normal 4.3
+  </title>
+</head>
+
+<body>
+  <script>
+    'use strict';
+    let x;
+    let y;
+    let areaImage;
+    let reservMemory;
+
+    x = +prompt('Введите числовое значение x:', '10');
+    y = +prompt('Введите числовое значение y:', '20');
+
+    areaImage = x * y;
+    reservMemory = areaImage * 6 / 8 / 1024;
+
+    console.log('Минимальный зарезервированный объём памяти (в Кбайт):', Math.ceil(reservMemory));
+  </script>
+</body>
+
+</html>
